@@ -1,10 +1,10 @@
 const config = require('./config');
 const utils = require('./utils');
 const { banner } = require('./consts');
-const { Client, Intents } = require('discord.js');
+const { Client, GatewayIntentBits, Partials } = require('discord.js');
 const { log } = require('./logger');
 
-const client = new Client({ intents: [Intents.FLAGS.GUILDS] });
+const client = new Client({ intents: [GatewayIntentBits.Guilds] });
 
 client.once("ready", c => {
   log.info(`Ready! Logged in as ${c.user.tag}`);

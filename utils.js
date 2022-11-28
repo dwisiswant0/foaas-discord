@@ -104,7 +104,7 @@ module.exports.respond = (interaction) => {
 
   endpoint = endpoint.replace(":from", new Date().getTime().toString())
   for (const arg of opt.data) {
-    endpoint = endpoint.replace(`:${arg.name}`, arg.type == "USER" ? `<@${arg.value}>` : arg.value)
+    endpoint = endpoint.replace(`:${arg.name}`, arg.type == "USER" || arg.type == 6 ? `<@${arg.value}>` : arg.value)
   }
 
   this.get(endpoint, (err, res) => {
