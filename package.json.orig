@@ -1,8 +1,12 @@
 {
   "dependencies": {
+<<<<<<< HEAD
+    "@discordjs/rest": "^0.5.0",
+=======
+>>>>>>> 6fe7a5d (Updated discord.js and fixed user ping)
     "@ptkdev/logger": "^1.8.0",
     "discord-api-types": "^0.36.2",
-    "discord.js": "14.6.0",
+    "discord.js": "^13.8.1",
     "dotenv": "^16.0.1"
   },
   "name": "foass-discord",
